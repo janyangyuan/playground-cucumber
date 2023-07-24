@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist/",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "module": "commonjs",
+    "target": "es2020",
+    "allowJs": true,
+    "strict": false,
+    "noEmit": false,
+    "lib": ["es2020"],
+    "types": ["node"],
+    "paths": {
+      "@pages/*": ["./tests/pages/*"],
+      "@support/*": ["./tests/support/*"]
+    }
+  },
+  "typeRoots": ["./node_modules/@types"],
+  "include": ["**/*.*"],
+  "exclude": ["node_modules"],
+  "baseUrl": "./"
+}
